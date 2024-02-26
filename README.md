@@ -18,14 +18,6 @@ might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
-
-If a function $f(n)$ grows much slower than $g(n)$ (i.e., $f(n) \in o(g(n))$), it also means that $f(n)$ grows no faster than $g(n)$ (i.e., $f(n) \in O(g(n))$). 
-
-This is because $f(n) \in o(g(n))$ implies that for any positive constant $c$, starting from some point $n_0$, $f(n)$ will always be less than $c \cdot g(n)$. 
-
-Now, consider the definition of $O(g(n))$: it states that there exist constants $c'$ and $n'_0$ such that $f(n)$ is bounded above by $c' \cdot g(n)$ for all $n \geq n'_0$.
-
-By choosing a $c'$ greater than any $c$ we choose for $o(g(n))$, and keeping $n'_0 = n_0$, we ensure that $f(n)$ is still bounded by $c' \cdot g(n)$ for all $n \geq n_0$.
-
-So, if $f(n) \in o(g(n))$, it also implies $f(n) \in O(g(n))$.
+Proof:
+If a function f(n)f(n) grows much slower than g(n)g(n) (i.e., f(n)∈o(g(n))f(n)∈o(g(n))), it also means that f(n)f(n) grows no faster than g(n)g(n) (i.e., f(n)∈O(g(n))f(n)∈O(g(n)). This is because f(n)∈o(g(n))f(n)∈o(g(n)) implies that for any positive constant cc, starting from some point n0n0​, f(n)f(n) will always be less than c⋅g(n)c⋅g(n). Now, consider the definition of O(g(n))O(g(n)): it states that there exist constants c′c′ and n0′n0′​ such that f(n)f(n) is bounded above by c′⋅g(n)c′⋅g(n) for all n≥n0′n≥n0′​. By choosing a c′c′ greater than any cc we choose for o(g(n))o(g(n)), and keeping n0′=n0n0′​=n0​, we ensure that f(n)f(n) is still bounded by c′⋅g(n)c′⋅g(n) for all n≥n0n≥n0​. So, if f(n)∈o(g(n))f(n)∈o(g(n)), it also implies f(n)∈O(g(n))f(n)∈O(g(n)).
 
