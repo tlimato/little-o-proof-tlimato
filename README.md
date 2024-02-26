@@ -21,7 +21,7 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 ## NOT STRICTLY FORMAL PROOF:
 If a function f(n) grows much slower than g(n) (i.e., f(n)∈o(g(n))), it also means that f(n)grows no faster than g(n) (i.e., f(n)∈O(g(n))). 
 
-This is because f(n)∈o(g(n)) implies that for any positive constant cc, starting from some point n0, f(n) will always be less than c⋅g(n).
+This is because f(n)∈o(g(n)) implies that for any positive constant c, starting from some point n0, f(n) will always be less than c⋅g(n).
 
 The definition of O(g(n)): states that there exist constants c′ and n0′ such that f(n) is bounded above by c′⋅g(n) for all n≥n0′. 
 
