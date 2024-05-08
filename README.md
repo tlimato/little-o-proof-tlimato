@@ -26,6 +26,7 @@ Given that $f(n) \in o(g(n))$, by definition, this means the following
 - For any positive constant $c$, there exists some threshold $n_0$ beyond which $f(n)$ is always less than $c \cdot g(n)$.
 
 Now, consider the definition of Big-O notation:
+
 $$
 f(n) \in O(g(n)) \iff \exists c' > 0, \exists n_0', \forall n \geq n_0': f(n) \leq c' \cdot g(n)
 $$
